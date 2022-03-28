@@ -17,9 +17,9 @@ chmod u+x $(list)
                                                                                 
 git add .                                                                       
                                                                                 
-git add --chmod=+x --$(list)                                                    
+git add --chmod=+x -- $(list)                                                    
                                                                                 
-read -p "Massa enter commit message" comm                                        
+read -p "Massa enter commit message: " comm                                        
                                                                                 
 git commit -m '$comm'                                                       
                                                                                 
